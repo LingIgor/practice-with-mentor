@@ -1,0 +1,10 @@
+ul {
+  list-style: none;
+}
+
+.barber {
+  color: rgba(255, 255, 255, 0.5);
+  width: 1070px;
+  height: 680px;
+  background-image: url(../images/foto-barber.jpg);
+}
