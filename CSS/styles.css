@@ -1,10 +1,292 @@
-ul {
-  list-style: none;
+:root {
+  --back-first-color: #ffffff;
+  --back-second-color: #f7f7f7;
+  --hdr-menu-color: #ffffff;
+  --h-color: #303030;
+  --hero-h-color: #ffffff;
+  --text-color: #555555;
+  --services-color: #9da4bd;
+  --extreme-color: #ff6c00;
 }
 
-.barber {
-  color: rgba(255, 255, 255, 0.5);
-  width: 1070px;
-  height: 680px;
-  background-image: url(../images/foto-barber.jpg);
+body {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: var(--text-color);
+}
+
+/* ---------------FOOTER----------- */
+
+.hdr {
+  background-color: grey;
+}
+.logo {
+}
+.hdr-nav {
+}
+.hdr-list {
+}
+.hdr-item {
+}
+.hdr-link,
+.hdr-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.1em;
+  color: var(--hdr-menu-color);
+}
+
+.hdr-link:hover,
+.hdr-link:focus,
+.hdr-tel:hover,
+.hdr-tel:focus,
+.hdr-btn:hover,
+.hdr-btn:focus {
+  color: var(--extreme-color);
+}
+
+.btn {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid var(--extreme-color);
+  border-radius: 25px;
+  color: var(--hdr-menu-color);
+}
+
+/* -----------------all-text------------- */
+
+.uptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+
+  color: var(--h-color);
+}
+
+.title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+
+  color: var(--h-color);
+}
+
+.text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: var(--text-color);
+}
+
+/* ---------------HERO section ------------------ */
+
+.hero {
+  background-color: grey;
+}
+.hero-uptitle {
+  color: rgba(157, 164, 189, 0.6);
+}
+.hero-title {
+  font-size: 72px;
+  line-height: 1.18;
+
+  color: var(--hero-h-color);
+}
+.hero-text {
+  color: var(--services-color);
+}
+.hero-list {
+}
+.hero-item {
+}
+.hero-btn,
+.hero-soc-btn {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  border: none;
+
+  color: rgba(157, 164, 189, 0.6);
+  background-color: grey;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--hero-h-color);
+}
+
+.hero-soc-list {
+}
+.hero-soc-item {
+}
+.hero-soc-btn {
+  letter-spacing: 0.2em;
+
+  color: var(--h-color);
+}
+.hero-soc-btn:hover,
+.hero-soc-btn:focus {
+  color: var(--extreme-color);
+}
+
+/* -------------------ABOUT section--------------- */
+
+.about {
+}
+.about-list {
+}
+.about-item {
+}
+.about-uptitle {
+}
+.about-title {
+}
+.about-suptitle {
+}
+.about-text {
+  font-size: 14px;
+  line-height: 1.86;
+
+  color: var(--text-color);
+}
+.about-btn {
+  color: var(--h-color);
+}
+
+/* ------------------SERVICES section------------- */
+
+.services {
+}
+.services-uptitle {
+  color: rgba(157, 164, 189, 0.6);
+}
+.services-list {
+}
+.services-item {
+}
+.services-prices-list {
+}
+.services-prices-item {
+}
+.services-prices-menu {
+  color: var(--services-color);
+}
+.services-prices-price {
+  color: var(--services-color);
+}
+.services-btn {
+}
+
+/* ------------------------TRADITION section-------------- */
+
+.tradition {
+}
+.traditional-list {
+}
+.traditional-item {
+}
+.traditional-number {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+
+  color: var(--h-color);
+}
+.traditional-plus {
+}
+.plus {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+
+  color: var(--extreme-color);
+}
+.traditional-number-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  color: var(--h-color);
+}
+.traditional-uptitle {
+}
+.traditional-title {
+}
+.traditional-suptitle {
+  font-size: 18px;
+  line-height: 1.67;
+  /* or 167% */
+
+  color: var(--text-color);
+}
+
+/* -------------------BARBERS section------------- */
+
+.barbers {
+}
+.barbers-uptitle {
+}
+.barbers-title {
+}
+.barbers-list {
+}
+.barbers-item {
+}
+.barbers-name {
+  font-size: 18px;
+  line-height: 1.39;
+
+  color: var(--h-color);
+}
+.barbers-text {
+  font-size: 14px;
+  line-height: 1.36;
+
+  color: var(--extreme-color);
+}
+.barbers-soc-list {
+}
+.barbers-soc-item {
+}
+
+/* ------------------------WORKS section--------------- */
+
+.works {
+}
+.works-uptitle {
+}
+.works-list {
+}
+.work-item {
+}
+
+/* -----------------FOOTER section------------- */
+
+.contacts {
+}
+.contacts-title {
+}
+.contacts-list {
+}
+.contacts-item {
+}
+.contacts-suptitle {
+}
+.contacts-text {
 }
