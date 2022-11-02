@@ -20,6 +20,14 @@ body {
   color: var(--text-color);
 }
 
+a {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
 /* ---------------FOOTER----------- */
 
 .hdr {
@@ -47,7 +55,13 @@ body {
 .hdr-tel:hover,
 .hdr-tel:focus,
 .hdr-btn:hover,
-.hdr-btn:focus {
+.hdr-btn:focus,
+.contacts-link:hover,
+.contacts-link:focus,
+.contacts-link-tel:hover,
+.contacts-link-tel:focus,
+.contacts-link-mail:hover,
+.contacts-link-mail:focus {
   color: var(--extreme-color);
 }
 
@@ -86,11 +100,6 @@ body {
 }
 
 .text {
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
-
-  color: var(--text-color);
 }
 
 /* ---------------HERO section ------------------ */
@@ -229,11 +238,6 @@ body {
 .traditional-title {
 }
 .traditional-suptitle {
-  font-size: 18px;
-  line-height: 1.67;
-  /* or 167% */
-
-  color: var(--text-color);
 }
 
 /* -------------------BARBERS section------------- */
@@ -249,7 +253,6 @@ body {
 .barbers-item {
 }
 .barbers-name {
-  font-size: 18px;
   line-height: 1.39;
 
   color: var(--h-color);
@@ -279,14 +282,32 @@ body {
 /* -----------------FOOTER section------------- */
 
 .contacts {
+  background-color: black;
 }
 .contacts-title {
+  color: var(--hdr-menu-color);
 }
+
 .contacts-list {
+}
+
+.contacts-link {
+  font-weight: 700;
+  color: var(--services-color);
+}
+.contacts-link-tel {
+  color: var(--services-color);
+}
+
+.contacts-link-mail {
+  text-decoration-line: underline;
+  color: var(--services-color);
 }
 .contacts-item {
 }
 .contacts-suptitle {
+  color: var(--hdr-menu-color);
 }
 .contacts-text {
+  color: var(--services-color);
 }
