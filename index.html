@@ -22,39 +22,52 @@
   </head>
   <body>
     <header class="hdr">
-      <a href="./index.html">
-        <img class="logo" src="./images/Logo.svg" alt="logo" />
-      </a>
-      <nav class="hdr-nav">
-        <ul class="hdr-list list">
-          <li class="hdr-item"><a href="#" class="hdr-link">About</a></li>
-          <li class="hdr-item">
-            <a href="#" class="hdr-link">Services and prices</a>
-          </li>
-          <li class="hdr-item"><a href="#" class="hdr-link">Barbers</a></li>
-          <li class="hdr-item"><a href="#" class="hdr-link">Contacts</a></li>
-        </ul>
-      </nav>
+      <div class="container hdr-container">
+        <nav class="hdr-nav">
+          <a href="./index.html">
+            <img class="logo" src="./images/Logo.svg" alt="logo" />
+          </a>
+          <ul class="hdr-list list">
+            <li class="hdr-item item">
+              <a href="#" class="hdr-link">About</a>
+            </li>
+            <li class="hdr-item item">
+              <a href="#" class="hdr-link">Services and prices</a>
+            </li>
+            <li class="hdr-item item">
+              <a href="#" class="hdr-link">Barbers</a>
+            </li>
+            <li class="hdr-item item">
+              <a href="#" class="hdr-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
 
-      <a class="hdr-tel" href="tel:+380441111111">+38 044 111 11 11</a>
-      <button class="hdr-btn btn" type="button">Online-booking</button>
+        <a class="hdr-tel" href="tel:+380441111111">+38 044 111 11 11</a>
+        <button class="hdr-btn btn" type="button">Online-booking</button>
+      </div>
     </header>
     <main>
       <section class="hero">
-        <p class="hero-uptitle uptitle">A hair salon for men in Kyiv</p>
-        <h1 class="hero-title title">BarberShop</h1>
-        <p class="hero-text text">
-          We are experts in trendy men’s haircuts. <br />
-          We work quickly, carefully and with style.
-        </p>
-        <ul class="hero-list list">
-          <li class="hero-item">
-            <button class="hero-btn" type="button">Back</button>
-          </li>
-          <li class="hero-item">
-            <button class="hero-btn" type="button">Forward</button>
-          </li>
-        </ul>
+        <div class="container hero-container">
+          <div class="hero-box">
+            <p class="hero-uptitle uptitle">A hair salon for men in Kyiv</p>
+            <h1 class="hero-title title">BarberShop</h1>
+            <p class="hero-text text">
+              We are experts in trendy men’s haircuts. <br />
+              We work quickly, carefully and with style.
+            </p>
+          </div>
+          <ul class="hero-list list">
+            <li class="hero-item">
+              <button class="hero-btn back" type="button">Back</button>
+            </li>
+            <li class="hero-item">
+              <button class="hero-btn forvard" type="button">Forward</button>
+            </li>
+          </ul>
+        </div>
+
         <ul class="hero-soc-list list">
           <li class="hero-soc-item">
             <button class="hero-soc-btn" type="button">Instagram</button>
@@ -65,81 +78,88 @@
         </ul>
       </section>
       <section class="about">
-        <ul class="about-list list">
-          <li class="about-item">
-            <img src="./images/best1.jpg" alt="foto1" width="270px" />
-          </li>
-          <li class="about-item">
-            <img src="./images/best2.jpg" alt="foto2" width="270px" />
-          </li>
-          <p class="about-uptitle uptitle">About</p>
-          <h2 class="about-title title">Best Barbershop in your city</h2>
-          <p class="about-suptitle text">
-            If you want to add more confidence to your image, you should
-            definitely visit us.
-          </p>
-          <p class="about-text">
-            We are a team that never stops at what has been achieved and are
-            thirsty for changes. And when you fall into the hands of our master,
-            you will never be the same again. We are a team that is always "on
-            the same wave" with clients. Therefore, we are always ready to
-            improve everyone who comes to us!
-          </p>
-          <button class="about-btn btn" type="button">ONLINE-BOOKING</button>
-        </ul>
+        <div class="container about-container">
+          <ul class="about-list list">
+            <li class="about-item">
+              <img src="./images/best1.jpg" alt="foto1" width="270px" />
+            </li>
+            <li class="about-item">
+              <img src="./images/best2.jpg" alt="foto2" width="270px" />
+            </li>
+            <p class="about-uptitle uptitle">About</p>
+            <h2 class="about-title title">Best Barbershop in your city</h2>
+            <p class="about-suptitle text">
+              If you want to add more confidence to your image, you should
+              definitely visit us.
+            </p>
+            <p class="about-text">
+              We are a team that never stops at what has been achieved and are
+              thirsty for changes. And when you fall into the hands of our
+              master, you will never be the same again. We are a team that is
+              always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!
+            </p>
+            <button class="about-btn btn" type="button">ONLINE-BOOKING</button>
+          </ul>
+        </div>
       </section>
       <section class="services">
-        <p class="services-uptitle uptitle">
-          Spend your time with the best masters
-        </p>
+        <div class="container services-container">
+          <p class="services-uptitle uptitle">
+            Spend your time with the best masters
+          </p>
+          <h2 class="services-title title">Services and prices</h2>
 
-        <ul class="services-list list">
-          <li class="services-item">
-            <ul class="services-prices-list list">
-              <li class="services-prices-item">
-                <p class="services-prices-menu text">Men’s haircut</p>
-                <p class="services-prices-price text">from 300 uah.</p>
-              </li>
-              <li class="services-prices-item">
-                <p class="services-prices-menu text">Beard trim</p>
-                <p class="services-prices-price text">from 300 uah.</p>
-              </li>
-              <li class="services-prices-item">
-                <p class="services-prices-menu text">Mustache trim</p>
-                <p class="services-prices-price text">from 200 uah.</p>
-              </li>
-              <li class="services-prices-item">
-                <p class="services-prices-menu text">Straight razor shave</p>
-                <p class="services-prices-price text">from 200 uah.</p>
-              </li>
-            </ul>
-          </li>
-          <li class="services-item">
-            <ul class="services-prices-list list">
-              <li class="services-prices-item">
-                <p class="services-prices-menu text">Trainee’s haircut</p>
-                <p class="services-prices-price text">from 50 uah.</p>
-              </li>
-              <li class="services-prices-item">
-                <p class="services-prices-menu text">
-                  Haircut under the nozzle
-                </p>
-                <p class="services-prices-price text">from 200 uah.</p>
-              </li>
-              <li class="services-prices-item">
-                <p class="services-prices-menu text">
-                  Children’s haircut (0-12 y.o.)
-                </p>
-                <p class="services-prices-price text">from 300 uah.</p>
-              </li>
-              <li class="services-prices-item">
-                <p class="services-prices-menu text">Camouflage of gray hair</p>
-                <p class="services-prices-price text">from 200 uah.</p>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <button class="services-btn btn" type="button">online-booking</button>
+          <ul class="services-list list">
+            <li class="services-item">
+              <ul class="services-prices-list list">
+                <li class="services-prices-item">
+                  <p class="services-prices-menu text">Men’s haircut</p>
+                  <p class="services-prices-price text">from 300 uah.</p>
+                </li>
+                <li class="services-prices-item">
+                  <p class="services-prices-menu text">Beard trim</p>
+                  <p class="services-prices-price text">from 300 uah.</p>
+                </li>
+                <li class="services-prices-item">
+                  <p class="services-prices-menu text">Mustache trim</p>
+                  <p class="services-prices-price text">from 200 uah.</p>
+                </li>
+                <li class="services-prices-item">
+                  <p class="services-prices-menu text">Straight razor shave</p>
+                  <p class="services-prices-price text">from 200 uah.</p>
+                </li>
+              </ul>
+            </li>
+            <li class="services-item">
+              <ul class="services-prices-list list">
+                <li class="services-prices-item">
+                  <p class="services-prices-menu text">Trainee’s haircut</p>
+                  <p class="services-prices-price text">from 50 uah.</p>
+                </li>
+                <li class="services-prices-item">
+                  <p class="services-prices-menu text">
+                    Haircut under the nozzle
+                  </p>
+                  <p class="services-prices-price text">from 200 uah.</p>
+                </li>
+                <li class="services-prices-item">
+                  <p class="services-prices-menu text">
+                    Children’s haircut (0-12 y.o.)
+                  </p>
+                  <p class="services-prices-price text">from 300 uah.</p>
+                </li>
+                <li class="services-prices-item">
+                  <p class="services-prices-menu text">
+                    Camouflage of gray hair
+                  </p>
+                  <p class="services-prices-price text">from 200 uah.</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button class="services-btn btn" type="button">online-booking</button>
+        </div>
       </section>
       <section class="tradition">
         <ul class="traditional-list list">
@@ -261,28 +281,43 @@
           </li>
         </ul>
       </section>
+      <section class="contacts">
+        <h2 class="contacts-title title"></h2>
+        <ul class="contacts-list list">
+          <li class="contacts-item">
+            <a
+              href="https://goo.gl/maps/uVRzdHh4AytifGsFA"
+              class="contacts-link"
+              >st. Vasilkovaya, 7A Kiev, 08132</a
+            >
+          </li>
+          <li class="contacts-item">
+            <a href="tel:+380441111111" class="contacts-link-tel text"
+              >+38 044 111 11 11</a
+            >
+          </li>
+          <li class="contacts-item">
+            <a
+              href="mailto:barbershop@email.com"
+              class="contacts-link-mail text"
+              >barbershop@email.com</a
+            >
+          </li>
+        </ul>
+        <p class="contacts-suptitle uptitle">Working hours</p>
+        <p class="contacts-text text">Every day from 9:00 to 22:00</p>
+      </section>
     </main>
-    <footer class="contacts">
-      <h2 class="contacts-title title"></h2>
-      <ul class="contacts-list list">
-        <li class="contacts-item">
-          <a href="https://goo.gl/maps/uVRzdHh4AytifGsFA" class="contacts-link"
-            >st. Vasilkovaya, 7A Kiev, 08132</a
-          >
+    <footer class="ftr">
+      <p class="copyrite"><span>&#169;</span>Copyright 2020</p>
+      <ul class="ftr-soc-list list">
+        <li class="ftr-soc-item">
+          <button class="hero-soc-btn ftr-btn" type="button">Instagram</button>
         </li>
-        <li class="contacts-item">
-          <a href="tel:+380441111111" class="contacts-link-tel text"
-            >+38 044 111 11 11</a
-          >
-        </li>
-        <li class="contacts-item">
-          <a href="mailto:barbershop@email.com" class="contacts-link-mail text"
-            >barbershop@email.com</a
-          >
+        <li class="ftr-soc-item">
+          <button class="hero-soc-btn ftr-btn" type="button">Youtube</button>
         </li>
       </ul>
-      <p class="contacts-suptitle uptitle">Working hours</p>
-      <p class="contacts-text text">Every day from 9:00 to 22:00</p>
     </footer>
   </body>
 </html>
