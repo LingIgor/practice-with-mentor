@@ -40,6 +40,10 @@ a {
   padding: 0;
 }
 
+section {
+  margin: 0 auto;
+}
+
 .list {
   list-style: none;
 }
@@ -109,6 +113,7 @@ a {
 }
 
 .btn {
+  padding: 12px 20px;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
@@ -230,11 +235,24 @@ a {
 .about {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-color: yellow;
+  background-color: #ffffff;
+}
+
+.about-container {
+  display: flex;
 }
 .about-list {
+  display: flex;
+  margin-right: 30px;
 }
 .about-item {
+}
+
+.about-box {
+  padding-right: 100px;
+}
+.about-item:first-child {
+  margin-right: 30px;
 }
 .about-uptitle {
   margin-bottom: 20px;
@@ -259,9 +277,13 @@ a {
 /* ------------------SERVICES section------------- */
 
 .services {
+  width: 1600px;
   padding-top: 120px;
   padding-bottom: 120px;
-  background-color: green;
+  background-image: url(../images/prices.jpg);
+}
+
+.services-container {
 }
 .services-uptitle {
   color: rgba(157, 164, 189, 0.6);
@@ -270,17 +292,36 @@ a {
 
 .services-title {
   color: var(--hero-h-color);
-  margin-bottom: 20px;
+  margin-bottom: 44px;
 }
 .services-list {
   display: flex;
+
   margin-bottom: 44px;
 }
+
 .services-item {
+  width: 570px;
+  /* height: 240px; */
+  border: 1px solid black;
+}
+
+.services-item:first-child {
+  margin-right: 30px;
 }
 .services-prices-list {
+  padding: 30px 20px;
 }
+
 .services-prices-item {
+  margin-bottom: 20px;
+  justify-content: space-between;
+  width: 528px;
+  height: 30px;
+  display: flex;
+}
+.services-prices-item:nth-child(n + 4) {
+  margin-bottom: 0;
 }
 .services-prices-menu {
   color: var(--services-color);
@@ -289,6 +330,8 @@ a {
   color: var(--services-color);
 }
 .services-btn {
+  display: block;
+  margin: 0 auto;
 }
 
 /* ------------------------TRADITION section-------------- */
@@ -296,14 +339,27 @@ a {
 .tradition {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-color: grey;
+  background-color: #fff;
 }
+
+.tradition-comtainer {
+  display: flex;
+}
+
+.traditional-box {
+  margin-right: 130px;
+}
+
 .traditional-list {
+  display: flex;
+  flex-direction: column;
 }
 .traditional-item {
-  display: inline-block;
+  height: 133px;
   width: 170px;
   padding: 20px 24px;
+  border: 1px solid black;
+  text-align: center;
 }
 .traditional-number {
   font-weight: 700;
@@ -330,8 +386,10 @@ a {
   color: var(--h-color);
 }
 .traditional-uptitle {
+  margin-bottom: 20px;
 }
 .traditional-title {
+  margin-bottom: 20px;
 }
 .traditional-suptitle {
 }
@@ -339,6 +397,9 @@ a {
 /* -------------------BARBERS section------------- */
 
 .barbers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: antiquewhite;
 }
 .barbers-uptitle {
 }
@@ -367,6 +428,9 @@ a {
 /* ------------------------WORKS section--------------- */
 
 .works {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: aqua;
 }
 .works-uptitle {
 }
@@ -378,33 +442,51 @@ a {
 /* -----------------FOOTER section------------- */
 
 .contacts {
-  background-color: black;
+  padding-top: 130px;
+  padding-bottom: 120px;
+
+  background-image: url(../images/contact.jpg);
 }
 .contacts-title {
   color: var(--hdr-menu-color);
+  margin-bottom: 40px;
+}
+
+.ftr-address {
+  font-style: normal;
 }
 
 .contacts-list {
 }
 
+.contacts-list .item + .item {
+  margin-top: 20px;
+}
+
 .contacts-link {
+  margin-bottom: 20px;
   font-weight: 700;
   color: var(--services-color);
 }
 .contacts-link-tel {
+  margin-bottom: 20px;
   color: var(--services-color);
 }
 
 .contacts-link-mail {
+  margin-bottom: 70px;
   text-decoration-line: underline;
   color: var(--services-color);
 }
 .contacts-item {
 }
+
 .contacts-suptitle {
+  margin-top: 70px;
   color: var(--hdr-menu-color);
 }
 .contacts-text {
+  margin-top: 20px;
   color: var(--services-color);
 }
 
@@ -412,6 +494,7 @@ a {
 }
 
 .copyrite {
+  margin-right: 800px;
   font-weight: 600;
   font-size: 11px;
   line-height: 15px;
@@ -420,7 +503,19 @@ a {
   color: var(--services-color);
 }
 
+.ftr-container {
+  display: flex;
+  align-items: center;
+}
+
 .ftr-soc-list {
+  padding-top: 56px;
+  padding-bottom: 56px;
+  display: flex;
+}
+
+.ftr-soc-item:first-child {
+  margin-right: 40px;
 }
 
 .list {
