@@ -52,7 +52,7 @@ section {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 /* ---------------FOOTER----------- */
@@ -73,10 +73,8 @@ section {
 }
 .hdr-list {
   display: flex;
-}
-
-.hdr-list .item + .item {
-  margin-left: 30px;
+  gap: 30px;
+  margin-left: 125px;
 }
 
 /* .hdr-item {
@@ -124,6 +122,7 @@ section {
   border: 1px solid var(--extreme-color);
   border-radius: 25px;
   color: var(--hdr-menu-color);
+  background-color: transparent;
 }
 
 /* -----------------all-text------------- */
@@ -156,11 +155,13 @@ section {
 }
 
 .hero-container {
-  background-image: url(../images/hero.jpg);
+  display: flex;
 }
 
 .hero-box {
+  background-image: url(../images/hero.jpg);
   padding: 272px 100px 144px;
+  flex-grow: 1;
 }
 .hero-uptitle {
   color: rgba(157, 164, 189, 0.6);
@@ -179,12 +180,15 @@ section {
 
 .hero-list {
   display: flex;
-  margin-left: 906px;
-  padding-bottom: 49px;
+  margin-left: 806px;
 }
-.hero-item:first-child {
+
+.hero-item {
+  margin-top: 144px;
+}
+/* .hero-item:first-child {
   margin-right: 24px;
-}
+} */
 .hero-btn,
 .hero-soc-btn {
   font-weight: 600;
@@ -200,20 +204,20 @@ section {
 .hero-soc-btn {
   background-color: #fff;
 }
-.back {
+/* .back {
   padding-left: 0;
 }
 .forvard {
   padding-right: 0;
-}
+} */
 .hero-btn:hover,
 .hero-btn:focus {
   color: var(--hero-h-color);
 }
 
 .hero-soc-list {
+  width: 100px;
   background-color: var(--back-first-color);
-  display: flex;
 }
 .hero-soc-item:first-child {
   margin-right: 40px;
@@ -240,10 +244,11 @@ section {
 
 .about-container {
   display: flex;
+  gap: 30px;
 }
 .about-list {
   display: flex;
-  margin-right: 30px;
+  gap: 30px;
 }
 .about-item {
 }
@@ -251,9 +256,9 @@ section {
 .about-box {
   padding-right: 100px;
 }
-.about-item:first-child {
+/* .about-item:first-child {
   margin-right: 30px;
-}
+} */
 .about-uptitle {
   margin-bottom: 20px;
 }
@@ -277,10 +282,14 @@ section {
 /* ------------------SERVICES section------------- */
 
 .services {
-  width: 1600px;
   padding-top: 120px;
   padding-bottom: 120px;
-  background-image: url(../images/prices.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(17, 19, 25, 0.85),
+      rgba(17, 19, 25, 0.8)
+    ),
+    url(../images/prices.jpg);
 }
 
 .services-container {
@@ -296,19 +305,17 @@ section {
 }
 .services-list {
   display: flex;
-
+  gap: 30px;
   margin-bottom: 44px;
 }
 
 .services-item {
+  background-color: rgba(17, 19, 25, 0.1);
   width: 570px;
-  /* height: 240px; */
+
   border: 1px solid black;
 }
 
-.services-item:first-child {
-  margin-right: 30px;
-}
 .services-prices-list {
   padding: 30px 20px;
 }
@@ -342,25 +349,40 @@ section {
   background-color: #fff;
 }
 
-.tradition-comtainer {
+.traditional-comtainer {
   display: flex;
+  grid-area: 30px;
 }
 
 .traditional-box {
+  margin-left: 100px;
+  margin-right: 30px;
+  gap: 30px;
+}
+
+.traditional-box2 {
+  padding-top: 35px;
   margin-right: 130px;
 }
 
 .traditional-list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
+  gap: 30px;
+}
+
+.traditional-box-text {
+  padding-right: 70px;
 }
 .traditional-item {
+  text-align: center;
   height: 133px;
   width: 170px;
   padding: 20px 24px;
-  border: 1px solid black;
-  text-align: center;
+  background-color: #f7f7f7;
 }
+
 .traditional-number {
   font-weight: 700;
   font-size: 42px;
@@ -382,8 +404,16 @@ section {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-
+  letter-spacing: 0.01em;
   color: var(--h-color);
+}
+
+.tdr-box {
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 6px;
+  width: 122px;
+  height: 30px;
 }
 .traditional-uptitle {
   margin-bottom: 20px;
@@ -399,28 +429,42 @@ section {
 .barbers {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-color: antiquewhite;
+  background-color: #f7f7f7;
 }
+
 .barbers-uptitle {
+  margin-bottom: 20px;
 }
 .barbers-title {
+  margin-bottom: 44px;
 }
 .barbers-list {
+  display: flex;
+  gap: 30px;
 }
 .barbers-item {
+  width: calc((100%-60px) / 3);
 }
 .barbers-name {
-  line-height: 1.39;
-
+  margin-top: 30px;
   color: var(--h-color);
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.02em;
 }
 .barbers-text {
+  margin-top: 8px;
+  margin-bottom: 27px;
   font-size: 14px;
   line-height: 1.36;
-
   color: var(--extreme-color);
+  text-align: center;
 }
 .barbers-soc-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .barbers-soc-item {
 }
@@ -430,11 +474,14 @@ section {
 .works {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-color: aqua;
+  background-color: #ffffff;
 }
 .works-uptitle {
+  margin-bottom: 44px;
 }
 .works-list {
+  display: flex;
+  gap: 30px;
 }
 .work-item {
 }
@@ -444,15 +491,31 @@ section {
 .contacts {
   padding-top: 130px;
   padding-bottom: 120px;
-
-  background-image: url(../images/contact.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(../images/contact.jpg);
 }
 .contacts-title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
   color: var(--hdr-menu-color);
   margin-bottom: 40px;
 }
 
 .ftr-address {
+  width: 270px;
   font-style: normal;
 }
 
@@ -482,6 +545,7 @@ section {
 }
 
 .contacts-suptitle {
+  text-align: center;
   margin-top: 70px;
   color: var(--hdr-menu-color);
 }
@@ -512,10 +576,7 @@ section {
   padding-top: 56px;
   padding-bottom: 56px;
   display: flex;
-}
-
-.ftr-soc-item:first-child {
-  margin-right: 40px;
+  gap: 40px;
 }
 
 .list {
@@ -523,6 +584,9 @@ section {
 
 .ftr-soc-item {
 }
+
 .ftr-btn {
+  padding: 0;
+  margin: 0;
   background-color: var(--hdr-menu-color);
 }
